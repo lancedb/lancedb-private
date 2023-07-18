@@ -36,6 +36,7 @@ jobs:
           node-version: 20
       - name: Build
         run: |
+          npm version patch
           npm pack
       - name: Upload Linux Artifacts
         uses: actions/upload-artifact@v3
